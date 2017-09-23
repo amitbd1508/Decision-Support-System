@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyz.ideasubmission.student.SubmitActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:elevation="5dp"
+       android:orientation="vertical"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="#000000"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="Chose a catagory"/>
+
+       <com.jaredrummler.materialspinner.MaterialSpinner
+           android:id="@+id/spinner"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="8dp"
+           android:layout_margin="10dp"/>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp">
+           <EditText android:id="@+id/problem_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:hint="Problem title" />
+       </android.support.design.widget.TextInputLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="#000000"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="Write your problem"/>
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp">
+           <EditText
+               android:id="@+id/problem_body"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:gravity="top|left"
+               android:inputType="textEmailAddress|textMultiLine"
+               android:lines="20"
+               android:layout_margin="9dp"
+               android:elevation="6dp"
+               android:minLines="5"
+               android:scrollHorizontally="false"
+               android:scrollbars="vertical" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.v7.widget.AppCompatButton
+           android:id="@+id/submit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Submit"
+           android:layout_gravity="center"
+           android:elevation="6dp"
+           android:layout_margin="9dp"
+           android:textColor="#ffffff"
+           app:backgroundTint="#283593"/>
+   </LinearLayout>
+</RelativeLayout>

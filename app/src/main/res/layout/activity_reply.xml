@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.xyz.ideasubmission.student.ReplyActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:elevation="6dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Title "
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="2dp"
+        android:id="@+id/posttitle"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="9dp"
+        android:elevation="6dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:id="@+id/postreply"/>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/likenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="9dp"
+        android:elevation="6dp"
+        android:padding="5dp"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+
+    </View>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:elevation="6dp"
+        android:id="@+id/likelist">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xyz.ideasubmission">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET">
+        a@g.c
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/dss"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".student.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".student.ProblemListActivity"
+            android:label="@string/title_activity_problem_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".student.SubmitActivity" />
+        <activity android:name=".student.SignupActivity" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".management.ResolveProblemActivity"
+            android:label="Reply" />
+        <activity
+            android:name=".student.ReplyActivity"
+            android:label="Replay" />
+        <activity
+            android:name=".management.ManagmentActivity"
+            android:label="@string/title_activity_management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.AddUserActivity"
+            android:label="Add New User" />
+        <activity
+            android:name=".admin.ModifyUserActivity"
+            android:label="Modify User" />
+        <activity android:name=".admin.PostViewActivity"></activity>
+    </application>
+
+</manifest>
